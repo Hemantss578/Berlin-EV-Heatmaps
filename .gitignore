@@ -1,0 +1,18 @@
+# Data (too large / regenerable — README has download links)
+datasets/*.csv
+datasets/*.xlsx
+!datasets/.gitkeep
+
+# Keep crowdsourced reports out of the public repo (optional — remove this line to include them)
+datasets/user_reports.csv
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# IDE / OS
+.vscode/
+.idea/
+Thumbs.db
