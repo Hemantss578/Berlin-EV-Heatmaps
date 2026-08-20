@@ -1,9 +1,11 @@
-# Data (too large / regenerable — README has download links)
-datasets/*.csv
+# Data: the three source datasets ARE committed (see scripts/prepare_berlin_data.py
+# for why Ladesaeulenregister.csv is safe to commit -- it's trimmed to Berlin-only
+# rows first, which keeps it small). A hosted deploy has no separate data-upload
+# step, so the app needs these files present in the repo to run at all.
 datasets/*.xlsx
-!datasets/.gitkeep
 
-# Keep crowdsourced reports out of the public repo (optional — remove this line to include them)
+# Keep crowdsourced reports out of the public repo (it's runtime-generated data,
+# not a source dataset -- and is ephemeral on Streamlit Cloud anyway, see docs/DEPLOY.md)
 datasets/user_reports.csv
 
 # Python
